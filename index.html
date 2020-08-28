@@ -18,13 +18,13 @@
       <h1>The Code Review</h1>
       <h2>Signup for our newsletter</h2>
       <p>Get the latest news on how your code is doing right in your inbox</p>
-      <br />
+      <hr />
     </header>
     <main>
       <form>
-        <h1>Contact Information</h1>
+        <legend class="contact-legend">Contact Information</legend>
 
-        <fieldset>
+        <fieldset class="contact-info">
           <label for="full-name">Full Name</label>
           <input
             type="text"
@@ -51,45 +51,127 @@
           <input type="text" id="city" name="user_city" />
 
           <label for="state">State</label>
-          <input type="text" id="state" name="user_state" />
+          <select id="state" name="user_state">
+            <optgroup label="State">
+              <option value="" disabled selected hidden>Choose State</option>
+              <!-- Found at https://www.tutorialrepublic.com/faq/how-to-make-a-placeholder-for-a-select-box-in-html.php#:~:text=Answer%3A%20Use%20the%20disabled%20and,element%20that%20has%20empty%20value.-->
+              <option value="alabama">Alabama</option>
+              <option value="alaska">Alaska</option>
+              <option value="arizona">Arizona</option>
+              <option value="arkansas">Arkansas</option>
+              <option value="california">California</option>
+              <option value="colorado">Colorado</option>
+              <option value="connecticut">Connecticut</option>
+              <option value="delaware">Delaware</option>
+              <option value="florida">Florida</option>
+              <option value="georgia">Georgia</option>
+              <option value="hawaii">Hawaii</option>
+              <option value="idaho">Idaho</option>
+              <option value="illinois">Illinois</option>
+              <option value="indiana">Indiana</option>
+              <option value="iowa">Iowa</option>
+              <option value="kansas">Kansas</option>
+              <option value="kentucky">Kentucky</option>
+              <option value="louisiana">Louisiana</option>
+              <option value="maine">Maine</option>
+              <option value="maryland">Maryland</option>
+              <option value="massachusetts">Massachusetts</option>
+              <option value="michigan">Michigan</option>
+              <option value="minnesota">Minnesota</option>
+              <option value="mississippi">Mississippi</option>
+              <option value="missouri">Missouri</option>
+              <option value="montana">Montana</option>
+              <option value="nebraska">Nebraska</option>
+              <option value="nevada">Nevada</option>
+              <option value="new-hampshire">New Hampshire</option>
+              <option value="new-jersey">New Jersey</option>
+              <option value="new-mexico">New Mexico</option>
+              <option value="new-york">New York</option>
+              <option value="north-carolina">North Carolina</option>
+              <option value="north-dakota">North Dakota</option>
+              <option value="ohio">Ohio</option>
+              <option value="oklahoma">Oklahoma</option>
+              <option value="oregon">Oregon</option>
+              <option value="pennsylvania">Pennsylvania</option>
+              <option value="rhode-island">Rhode Island</option>
+              <option value="south-carolina">South Carolina</option>
+              <option value="south-dakota">South Dakota</option>
+              <option value="tennessee">Tennessee</option>
+              <option value="texas">Texas</option>
+              <option value="utah">Utah</option>
+              <option value="vermont">Vermont</option>
+              <option value="virginia">Virginia</option>
+              <option value="washington">washington</option>
+              <option value="west-virginia">West Virginia</option>
+              <option value="wisconsin">Wisconsin</option>
+              <option value="wyoming">Wyoming</option>
+            </optgroup>
+          </select>
+          <br />
 
           <label for="zip">Zip Code</label>
           <input type="text" id="zip" name="user_zip" />
         </fieldset>
 
-        <br />
+        <hr class="newsletter-hr" />
 
-        <h1>Newsletter</h1>
+        <legend class="newsletter-legend">Newsletter</legend>
         <p>Select the newsletter you would like to receive</p>
 
-        <fieldset>
-          <input
-            type="checkbox"
-            id="html-news"
-            value="news-html"
-            name="user_news"
-          /><label for="html-news">HTML News</label><br />
+        <fieldset class="newsletter-fieldset">
+          <div class="box">
+            <input
+              type="checkbox"
+              id="html-news"
+              value="news-html"
+              name="user_news"
+            /><label for="html-news">HTML News</label><br />
+          </div>
+          <div class="box">
+            <input
+              type="checkbox"
+              id="css-news"
+              value="news-css"
+              name="user_interest"
+            /><label for="css-news">CSS News</label><br />
+          </div>
 
-          <input
-            type="checkbox"
-            id="css-news"
-            value="news-css"
-            name="user_interest"
-          /><label for="css-news">CSS News</label><br />
+          <div class="box">
+            <input
+              type="checkbox"
+              id="javascript-news"
+              value="news-javascript"
+              name="user_interest"
+            /><label for="javascript-news">Javascript News</label><br />
+          </div>
 
-          <input
-            type="checkbox"
-            id="javascript-news"
-            value="news-javascript"
-            name="user_interest"
-          /><label for="javascript-news">Javascript News</label><br />
+          <p>Newsletter format</p>
 
-          <label for="other">Other topics you'd like to hear about:</label>
+          <div class="box">
+            <input type="radio" id="html" name="format" value="html" /><label
+              >HTML</label
+            >
+            <br />
+          </div>
+
+          <div class="box">
+            <input
+              type="radio"
+              id="text"
+              name="format"
+              value="plain-text"
+            /><label>Plain text</label> <br />
+          </div>
+          <div class="other-box">
+            <label for="other">Other topics you'd like to hear about:</label>
+          </div>
           <textarea id="other" name="user_other"></textarea>
         </fieldset>
 
         <button type="submit">Sign Up</button>
       </form>
     </main>
+
+    <footer><p class="copy">Copyright The Code Review</p></footer>
   </body>
 </html>

@@ -1,7 +1,216 @@
+/* -------------------  Base Styles---------- */
+
 html {
   font-family: Montserrat, Arial, Helvetica, sans-serif;
+  color: rgb(45, 57, 69);
+}
+
+header {
+  text-align: center;
 }
 
 header h1 {
   text-align: center;
+  background-color: rgb(45, 57, 69);
+  color: white;
+  padding: 30px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: rgb(45, 57, 69);
+}
+
+header p {
+  color: grey;
+  border-bottom: 5px black solid;
+  padding-bottom: 50px;
+  width: 90%;
+  margin: auto;
+}
+
+header hr {
+  border: solid 1px black;
+  width: 90%;
+  margin-top: 4px;
+}
+
+main {
+  width: 90%;
+}
+
+.newsletter-hr {
+  width: 100%;
+  border: 1px solid black;
+  margin: 0;
+  text-align: center;
+}
+
+p {
+  color: grey;
+  width: 90%;
+}
+
+.copy {
+  font-size: 0.85em;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/* -------------------  Form/Input Styles---------- */
+
+.contact-legend {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: rgb(45, 57, 69);
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.newsletter-legend {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: rgb(45, 57, 69);
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+fieldset {
+  border: none;
+}
+
+form {
+  max-width: 767px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  border-radius: 8px;
+
+  width: 100%;
+}
+
+label,
+input {
+  color: rgb(45, 57, 69);
+}
+
+.contact-info input {
+  display: block;
+  border: none;
+  font-size: 16px;
+  height: 30px;
+  margin: 10px 0 10px 0;
+  outline: 0;
+  padding: 15px;
+  width: 90%;
+  background-color: #e8eeef;
+  color: rgb(239, 240, 241);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+
+input[id="full-name"],
+input[id="email"] {
+  text-align: right;
+}
+
+input:focus {
+  border: 2px solid rgb(70, 105, 139);
+}
+
+.contact-info label {
+  color: grey;
+  margin: 10px 0 10px 0;
+}
+
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+}
+
+input[id="zip"] {
+  width: 35%;
+}
+
+textarea,
+select {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  font-size: 16px;
+  height: 30px;
+  margin: 0;
+  padding: 15px;
+  width: 90%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  margin-bottom: 30px;
+  border-radius: 2px;
+}
+
+.newsletter-fieldset input,
+.newsletter-fieldset label {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.box {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.other-box {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+div input,
+#javascript-news,
+#css-news,
+#html-news {
+  margin-right: 10px;
+}
+
+select {
+  padding: 6px;
+  height: 60px;
+  border-radius: 5px;
+  min-width: 313.05px;
+  display: block;
+}
+
+textarea[id="other"] {
+  height: 100px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+input[type="checkbox"] label {
+  padding: 50px;
+}
+
+label[for="other"] {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  height: auto;
+}
+
+button[type="submit"] {
+  padding: 19px 39px 18px 39px;
+  color: white;
+  background-color: rgb(78, 187, 181);
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+  font-weight: bold;
+  border-style: none;
 }
