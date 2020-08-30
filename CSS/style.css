@@ -17,12 +17,12 @@ header h1 {
 }
 
 .first-hr {
-  width: 90%;
+  width: 96%;
   border: 3px solid black;
 }
 
 .second-hr {
-  width: 90%;
+  width: 96%;
   border: 1px black solid;
 }
 
@@ -148,11 +148,20 @@ input[type="radio"] {
   border-style: none;
 }
 
+.personal-info select {
+  height: 60px;
+}
+
+input [id="zip"] {
+  width: 35%;
+}
+
 /******************************* Media Queries *******************************/
-@media all and (min-width: 768) {
+@media all and (min-width: 768px) {
   .form-box {
     display: flex;
     flex-direction: row;
+    align-items: center;
   }
   .form-box label {
     display: block;
@@ -169,5 +178,9 @@ input[type="radio"] {
   }
   .form-box button {
     margin-left: 9rem;
+  }
+
+  input[id="zip"] {
+    flex-basis: 9rem;
   }
 }
