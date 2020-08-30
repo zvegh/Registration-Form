@@ -29,7 +29,17 @@ header h1 {
 footer p {
   font-size: 0.85em;
   text-align: center;
-  margin-top: 25px;
+  margin-top: 50px;
+  color: grey;
+}
+
+label {
+  color: rgb(73, 93, 112);
+}
+
+.newsletter-hr {
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 /********************* Form *********************/
@@ -158,6 +168,15 @@ input [id="zip"] {
 
 /******************************* Media Queries *******************************/
 @media all and (min-width: 768px) {
+  h2 {
+    margin-top: 70px;
+  }
+
+  header p {
+    margin-bottom: 50px;
+    color: grey;
+  }
+
   .form-box {
     display: flex;
     flex-direction: row;
@@ -181,6 +200,46 @@ input [id="zip"] {
   }
 
   input[id="zip"] {
-    flex-basis: 9rem;
+    max-width: 9rem;
+  }
+
+  textarea {
+    width: 95%;
+    align-items: center;
+    margin: 20px auto 40px auto;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  .textarea-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .submit {
+    width: 95%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .submit-box {
+    display: flex;
+    align-items: center;
+    align-items: flex-start;
+  }
+
+  .newsletter-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .newsletter-p {
+    margin-left: 13px;
+  }
+
+  .newsletter-label {
+    margin-left: 13px;
   }
 }

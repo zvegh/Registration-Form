@@ -140,8 +140,9 @@
             />
         </fieldset>
 
-        <hr class="second-hr">
+        <hr class="second-hr newsletter-hr">
 
+        <div class="newsletter-wrapper">
         <legend class="newsletter-legend">Newsletter</legend>
           <p class="newsletter-p">Select the newsletter you would like to receive</p>
 
@@ -178,7 +179,7 @@
               <input type="radio" id="html" name="format" value="html" /><label
                 >HTML</label
               > <br>
-            
+        
 
             <div>
               <input
@@ -189,15 +190,16 @@
               /><label>Plain text</label> <br />
 
             </div class="last-radio">
-            
+          </div>
             
               <label class="newsletter-label" for="other">Other topics you'd like to hear about:</label>
-            
+              <div class="submit-box textarea-box">
             <textarea id="other" name="user_other"></textarea>
+                </div>
           </fieldset>
-          
+          <div class="submit-box">
           <button class="submit" type="submit">Sign Up</button>
-        
+          </div>
       </form>
 
       <footer>
