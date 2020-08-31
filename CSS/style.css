@@ -3,6 +3,11 @@ html {
   color: rgb(45, 57, 69);
 }
 
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 header {
   text-align: center;
 }
@@ -59,7 +64,6 @@ fieldset {
   color: rgb(45, 57, 69);
   margin-bottom: 20px;
   margin-top: 30px;
-  padding-left: 14px;
 }
 
 .personal-info input {
@@ -73,6 +77,7 @@ fieldset {
   background-color: #e8eeef;
   color: black;
   border-radius: 5px;
+  outline: none;
 }
 
 .personal-info select {
@@ -107,7 +112,6 @@ input[type="email"]:focus {
   color: rgb(45, 57, 69);
   margin-bottom: 20px;
   margin-top: 30px;
-  padding-left: 14px;
 }
 
 textarea {
@@ -199,7 +203,7 @@ textarea {
 }
 
 .newsletter-p {
-  margin-left: 13px;
+  color: rgb(45, 57, 69);
 }
 
 .newsletter-label {
@@ -244,7 +248,7 @@ textarea {
   }
 
   #other {
-    width: 97%;
+    width: 100%;
   }
 
   .submit {
